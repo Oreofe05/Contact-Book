@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact Book.css">
+</head>
+
+<body>
+    <section class="father">
+        <section class="mother">
+            <h2 class="header"> Contact Book</h1>
+
+                <div class="add"> Add a contact
+                    <button class="addClick" onclick="addInfo()"> Add</button>
+                    <form action="" class="addForm" onsubmit="saveInfo(event)">
+                        <input type="text" class="name" placeholder="Contact name"><br>
+                        <input type="text" class="number" placeholder="Phone number"><br>
+
+                        <button type="submit"> Save</button>
+                    </form>
+                </div>
+
+                <div class="search"> Search a contact
+                    <button class="searchClick" onclick="searchInfo()">search</button>
+
+                    <form action="" class="searchForm" onsubmit="search(event)">
+                        <input type="text" class="searchName" placeholder="Contact name"><br>
+                        <button type="submit"> Search</button>
+                    </form>
+                    <div class="searchResult">
+
+                    </div>
+                </div>
+
+                <div class="delete">Delete a contact
+                    <button class="deleteClick" onclick="deleteInfo(event)">delete</button>
+
+                    <form action="" class="deleteForm" onsubmit="deleteForm(event)">
+                        <input type="text" class="deleteName" placeholder="Contact name"><br>
+                        <button type="submit"> Delete</button>
+                    </form>
+                </div>
+
+                <div class="display">Display all contact
+                    <button onclick="display()">display</button>
+                    <ol class="contactList"></ol>
+                </div>
+
+
+
+
+
+
+
+                <script src="Contact Book.js"></script>
+
+
+        </section>
+    </section>
+
+</body>
+
+</html>
